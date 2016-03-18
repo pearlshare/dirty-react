@@ -4,7 +4,7 @@ With a large react app, your `app.js` might not be delivered immediately, which 
 
 ##### DirtyReact to the rescue!
 
-DirtyReact creates listeners on all `input`'s and `textarea`'s in the page. Once your app has loaded and a client side render has occurred.
+DirtyReact creates listeners on all `input`'s and `textarea`'s in the page. Once your app has loaded and a client-side render has occurred, then all of the data is filled in.
 
 Usage
 -----
