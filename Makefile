@@ -1,0 +1,2 @@
+minify:
+	./minify.sh

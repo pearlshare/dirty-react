@@ -31,7 +31,6 @@ You will also need to add the following code in your view's `componentDidMount`:
     window.dispatchEvent(m);
 ```
 
-
 This will trigger an event informing DirtyReact that the first render has occurred.
 
 And bam! Any data entered into your webpage wont be lost!

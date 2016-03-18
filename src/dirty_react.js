@@ -37,10 +37,10 @@ window.addEventListener("reactMount", function () {
   // Find elements that were created in render
   dirtyReact.changed = [];
   for (var i = 0; i < dirtyReact.reactIds.length; i++) {
-    dirtyReact.foundElement = document.querySelector("[data-reactid='" + dirtyReact.reactIds[i] + "']");
+    dirtyReact.newElement = document.querySelector("[data-reactid=\"" + dirtyReact.reactIds[i] + "\"]");
 
-    if (dirtyReact.foundElement !== null) {
-      dirtyReact.changed.push(dirtyReact.foundElement);
+    if (dirtyReact.newElement !== null) {
+      dirtyReact.changed.push(dirtyReact.newElement);
     }
   }
 
