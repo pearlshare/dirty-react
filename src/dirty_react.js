@@ -46,8 +46,8 @@ window.addEventListener("reactMount", function () {
 
   // Update newly created elements with their new values
   for (var i = 0; i < dirtyReact.changed.length; i++) {
-    dirtyReact.reactid = dirtyReact.changed[i].getAttribute("data-reactid").toString();
-    dirtyReact.properValue = dirtyReact.inputs.changes[dirtyReact.reactid];
+    dirtyReact.foundId = dirtyReact.changed[i].getAttribute("data-reactid").toString();
+    dirtyReact.properValue = dirtyReact.inputs.changes[dirtyReact.foundId];
 
     // Set to proper value
     dirtyReact.changed[i].value = dirtyReact.properValue;

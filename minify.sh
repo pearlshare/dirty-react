@@ -1,6 +1,6 @@
 #!/bin/sh
 
-declare -a o=(dirtyReact inputs changes found toFake registerInputChange changed fakeEvent newElement properValue reactid reactIds)
+declare -a o=(dirtyReact inputs changes found toFake registerInputChange changed fakeEvent newElement properValue foundId reactIds)
 declare -a n=(d i c f t r a e n p q w)
 
 f=$(cat src/dirty_react.js)
