@@ -4,34 +4,24 @@ With a large react app, your `app.js` might not be delivered immediately, which 
 
 ##### DirtyReact to the rescue!
 
-DirtyReact creates listeners on all `input`'s and `textarea`'s in the page. Once your app has loaded and a client-side render has occurred, then all of the data is filled in.
+DirtyReact records the value of `input`'s and `textarea`'s on the page, so once a client-side render has occured, then the information call all be placed back.
 
 Usage
 -----
-
-```html
-<html>
-    <head>
-        <title>My react app!</title>
-    </head>
-    <body>
-        ...
-    
-        <script type="text/javascript" src="/js/dirty_react.min.js"></script>
-        <script type="text/javascript" src="/js/your_app.js"></script>
-    </body>
-</html>
-
-```
-
-You will also need to add the following code in your view's `componentDidMount`:
+In your highest level component:
 ```js
-    var m = document.createEvent("Event");
-    m.initEvent("reactMount");
-    window.dispatchEvent(m);
-```
+var dirtyReact = require("dirty-react");
 
-This will trigger an event informing DirtyReact that the first render has occurred.
+...
+    componentWillMount: function () {
+        dirtyReact.watch();
+    },
+
+    componentDidMount: function () {
+        dirtyReact.replay();
+    }
+...
+```
 
 And bam! Any data entered into your webpage wont be lost!
 
