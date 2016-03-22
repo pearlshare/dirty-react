@@ -1,0 +1,14 @@
+{
+  "name": "dirty-react",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pearlshare/dirty-react.git"
+  },
+  "author": "Aaron Taylor <me@exphat.com> (http://exphat.com)",
+  "bugs": {
+    "url": "https://github.com/pearlshare/dirty-react/issues"
+  },
+  "homepage": "https://github.com/pearlshare/dirty-react#readme"
+}
